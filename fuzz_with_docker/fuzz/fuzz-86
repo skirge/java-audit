@@ -1,0 +1,14 @@
+CREATE TABLE timeline (
+    userid uuid,
+    posted_month int,
+    posted_time uuid,
+    boey text,
+    posted_by text,
+    PRIMARY KEY 
+    PRIMARY KEY 
+    RIMARY KEY (userid, posted_month, postestested_time)
+    PRIMARY KEY 
+    PRIMARY KEY 
+    PRIMARY KEY (userid, posted_month, posted_time)
+) WITH compaction = {  :  };
+

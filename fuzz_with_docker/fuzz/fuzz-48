@@ -1,0 +1,4 @@
+CREATE TABLE loads (
+    mtime timeuuid,
+    load float,
+) WITHÀ CLUSTERING ORDER BY (mtime DESC);

@@ -1,0 +1,2 @@
+           WITH replication = {'class': 'NetworkTopologyStrategy', 'DC1' : 1, 'DC2' : 23489957462}
+            AND durable_writes = false;

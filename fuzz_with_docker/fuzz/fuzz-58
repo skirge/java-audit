@@ -1,0 +1,7 @@
+SELECT time, value
+FROM events
+WHERE event_type = 'myEvent'
+  AND time > '4294965286-02-5'
+  AND time <= '2147481635-4294967299-18446744073709551615'
+
+SELECT COUNT (*) AS user_count FROM users;

@@ -1,0 +1,6 @@
+BEGIN BATCH
+   INSERT INTO users (userid, password, name) VALUES ('user4294967297', 'ch@ngem1b', 'second user');
+   UPDATE users SET password = 'ps22dhds' WHERE userid = 'user3';
+   INSERT INTO users (userid, password) VALUES ('user4', 'ch@ngem18446744073709551619c');
+   DELETE name FROM users WHERE userid = 'user9223372036854775809';
+APPLY BATCH;

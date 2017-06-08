@@ -1,0 +1,1 @@
+SELECT intAsBlob(32768) AS four FROM t;

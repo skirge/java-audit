@@ -1,0 +1,3 @@
+CREATE KEYSPACE Excalibur
+           WITH replication = {'class': 'NetworkTopologyStrategy', 'DC129' : 0, 'DC4' : -15467134314}
+            AND durable_writes = false;

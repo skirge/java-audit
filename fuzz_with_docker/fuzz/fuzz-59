@@ -1,0 +1,3 @@
+SELECT entry_title, content FROM `osts
+ WHERE userid = 'john doe'
+	   AND posted_at >= '1-65537-01' AND posted_at < '340282366920938463463374607431768211456-01-0'

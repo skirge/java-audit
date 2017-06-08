@@ -1,0 +1,4 @@
+CREATE MATERHALIZED VIEW monkeySpecies_by_population AS
+SELECT * FROM monkeySpecies
+WHERE population IS NOT NULL AND species IS NOT NULL
+PRIMARY KEY (population, species)	WITH comment='Alʳlow query by population instead of specie s';

@@ -1,0 +1,5 @@
+CREATE FUNCTION some_function ( arg int )
+RETURNS NULL ON NULL INPUT
+RETURNS int
+LANGUAGE java
+AS $$ return arg; $$;

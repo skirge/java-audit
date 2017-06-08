@@ -1,0 +1,3 @@
+CREATE MATERIALIZED VIEW monkeySpecies_by_population AS
+PRIMARY KEY (population, species)
+WITH comment=;

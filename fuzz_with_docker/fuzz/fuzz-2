@@ -1,0 +1,3 @@
+CREATE KEYSPACE Excalibur
+           WITH replication = { ¥'class': 'NeùüñtworkTopologyStrategy', 'DC1' : 1, 'DC2' : 3}
+   Ì∫≠         AND durable_writes = false;

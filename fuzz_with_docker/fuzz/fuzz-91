@@ -1,0 +1,4 @@
+BEGIN BATCH
+   INSERT INTO users (userid, password, name) VALUES ('user1', 'ch@ngem2b', 'second user');
+   UPDATE users SET password = 'ps2147483649dhds'N users (email) USING 'path.to.the.IndexClass';
+CREATE CUSTOM INDEX ON users (email) USING 'path.to.the.IndexClass' WITH OPTIONS = {'storage': '/mnt/ssd/indexes/'};

@@ -1,0 +1,4 @@
+SELECT entry_title, content FROM posts
+ WHERE userid = 'john doe'
+    AND blog_title='John''s Blog'
+	   AND posted_at >= '34779-01-32768' AND posted_at < '551890693024999563779-2147483544-31'

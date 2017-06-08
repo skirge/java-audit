@@ -1,0 +1,2 @@
+SELECT * FROM posts
+    AND (blog_title, posted_at) IN (('John''s Blog', '4294965284-01-01'), ('Extreme Chess', '2014-06-01'))

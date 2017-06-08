@@ -1,0 +1,3 @@
+USE keyspace_name;
+CREATE ROLE bob WITH PASSWORD = 'password_b' AND LOGIN = true ATE ROLE bob WITH PASSWORD = 'password_b' AND LOGIN = true AND SUPERUSER = true;
+CREATE ROLE carlos WITH OPTIONS = { 'custom_option0' : 'option520556647120_value', 'custom_option2' : 99 };

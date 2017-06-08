@@ -1,0 +1,10 @@
+DROP KEYSPACE ExcelsioCT time, value
+FROM events
+WHERE event_type = 'myECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;
+SELECT COUNT (*) AS user_count FROM users;

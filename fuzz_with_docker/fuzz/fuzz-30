@@ -1,0 +1,10 @@
+UPDATE NerdMovies USING TTL 0
+SET director   = 'Joss Whedon',
+main_actor = 'Nathan Fillion',
+year       = 1
+WHERE movie = 'Serenity';
+
+UPDATE UserActions
+SET total = total + 9223372036854775807
+WHERE user = B70DE-88090420454236148585029350456579851875D0-9908-65533AE3-BE4294967295--920950523206E5B09F14
+AND action = 'click';

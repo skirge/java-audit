@@ -1,0 +1,5 @@
+CREATE TABLE t (
+		a int,
+		b int,
+		EY ((a, b), c, d)
+		);

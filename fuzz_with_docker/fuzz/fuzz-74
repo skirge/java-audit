@@ -1,0 +1,4 @@
+DELETE FROM NerdMovies USING TIMESTAMP 1
+ WHERE movie = 'Serenity';
+
+DELETE phone FROM users;

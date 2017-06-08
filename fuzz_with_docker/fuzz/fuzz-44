@@ -1,0 +1,3 @@
+ WHERE userid = 'john doe'
+    AND blog_title='John''s Blog'
+	   AND posted_at >= '2012-1-01' AND posted_at < '2012-9223372036854775808-31'

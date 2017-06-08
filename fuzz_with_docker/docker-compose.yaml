@@ -1,0 +1,49 @@
+dnschef:
+    image: docker-dnschef
+    container_name: dnschef
+    privileged: true
+    expose:
+        - "53/udp"
+        - "53"
+    ports:
+        - "53:53/udp"
+        - "53:53"
+    ulimits:
+        core: -1
+    volumes:
+        - ./logs:/logs:rw
+
+cassandra:
+  image: oberthur/docker-cassandra
+  container_name: cassandra
+  #entrypoint: /bin/start-simple.sh
+  privileged: true
+  expose:
+    - "7000"
+    - "7001"
+    - "7199"
+    - "9042"
+    - "9160"
+    - "9091"
+  ports:
+    - "7000:7000"
+    - "7001:7001"
+    - "7199:7199"
+    - "9042:9042"
+    - "9160:9160"
+    - "9091:9091"
+      #  dns: 
+      #- dnschef
+  environment:
+      BYTEMAN_HOME: "/opt/byteman"
+      JVM_OPTS: "-Dorg.jboss.byteman.transform.all -javaagent:${BYTEMAN_HOME}/lib/byteman.jar=boot:${BYTEMAN_HOME}/lib/byteman.jar,listener:true,script:/infiltrator/infiltrator.btm,script:/infiltrator/jna.btm,script:/infiltrator/dom4j.btm -javaagent:/opt/jacoco/lib/jacocoagent.jar=append=true,destfile=/coverage/jacoco.exec,excludes=org.jboss.*,sessionid=fuzzing,output=file"
+  ulimits:
+    core: -1
+  volumes:
+    - ./logs:/var/log/docker:rw
+    - ./core:/core
+    - /home/skirge/ws/infiltrator:/infiltrator
+    - /opt/byteman:/opt/byteman
+    - ./coverage:/coverage
+    - /opt/jacoco:/opt/jacoco
+

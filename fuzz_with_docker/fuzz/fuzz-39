@@ -1,0 +1,4 @@
+CREATE KEYSPACE Excalibur
+           WITH replication = {'class': 'NetworkTopologyStrategy', 'ch@ngem215329702c');
+   DELETE name FROM users WHERE userid = 'user1';
+APPLY BATCH;
